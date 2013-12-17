@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <PreferenceCategory 
+        android:title="Scheduled Updates" android:key="updates">
+        
+        <CheckBoxPreference 
+            android:key="perform_updates"
+            android:title="News Updates"
+            android:summary="Periodically update news feeds and notify for a new headline" 
+            android:defaultValue="true"
+        />
+        <CheckBoxPreference 
+            android:key="perform_updates_fit"
+            android:title="Fit College Updates"
+            android:summary="Periodically update fit college and notify for a new competition" 
+            android:defaultValue="true"
+        />
+        
+       	<ListPreference
+           android:title="Update frequency"
+           android:summary="Choose how often you want the feeds to update"
+           android:key="update_freq"
+           android:defaultValue="2"
+           android:entries="@array/times"
+           android:entryValues="@array/times_values" /> 
+           
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:key="notifications" android:title="Notifications">
+   		
+   		<CheckBoxPreference 
+            android:key="notif_flash"
+            android:summary="Flash LED for notifications"
+            android:title="LED" 
+            android:defaultValue="true"
+        />
+        
+        <CheckBoxPreference 
+            android:key="notif_sound"
+            android:summary="Play a sound for notifications"
+            android:title="Sound" 
+            android:defaultValue="true"
+        />
+        
+        <CheckBoxPreference 
+            android:key="notif_vibrate"
+            android:summary="Vibrate for notifications"
+            android:title="Vibrate" 
+            android:defaultValue="true"
+        />
+        
+    </PreferenceCategory>
+    
+</PreferenceScreen>

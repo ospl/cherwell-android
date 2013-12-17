@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/competitor_1_view"
+            android:background="@drawable/fit_college_bg"
+	        android:clickable="true"
+            >
+		<LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal" >	
+		    <com.cherwell.utilities.AspectRatioImageView 
+		        android:id="@+id/fit_1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:adjustViewBounds="true" 
+		        android:src="@drawable/fit_placeholder" />
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:orientation="vertical"
+		        android:gravity="center">
+			    <TextView 
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+			        android:id="@+id/college_1"
+			        android:textColor="#636363"
+			        android:padding="10dp"
+		          	android:textSize="@dimen/large_text_title"
+			        android:textStyle="bold" />
+			    <TextView 
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+			        android:id="@+id/names_1"
+			        android:paddingLeft="10dp"
+			        android:paddingRight="10dp"
+			        android:textSize="@dimen/text_big"
+			        android:gravity="center" />
+			    <TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:id="@+id/score_1"
+	   		        android:textSize="@dimen/text_big"	        
+			        android:padding="10dp"
+			        android:textColor="@drawable/green"/>
+			    <View 
+			        android:layout_height="6dp"
+			        android:layout_width="0dp"
+			        android:id="@+id/scale_1"
+			        android:background="@drawable/green"
+			        android:paddingLeft="10dp" 
+			        android:paddingRight="10dp" />
+		    </LinearLayout>
+	    </LinearLayout>
+	    <TextView
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentBottom="true"
+			        android:layout_centerHorizontal="true"
+			        android:id="@+id/voted_indicator"
+			        android:background="#99000000"
+			        android:text="VOTED"
+			        android:visibility="gone"
+			        android:gravity="center"
+			        android:textStyle="bold"
+			        android:textColor="@drawable/white"
+			        android:padding="10dp"
+			        android:textSize="@dimen/text_xbig"
+			        />
+	</RelativeLayout>
+    
+    <View android:layout_height="0.5dp"
+        android:layout_width="fill_parent"
+        android:background="@drawable/darker_gray" />
+    
+    <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/competitor_2_view"
+	        android:background="@drawable/fit_college_bg"
+	        android:clickable="true"
+            >
+		<LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal" >	
+		    <com.cherwell.utilities.AspectRatioImageView 
+		        android:id="@+id/fit_2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:adjustViewBounds="true" 
+		        android:src="@drawable/fit_placeholder" />
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:orientation="vertical"
+		        android:gravity="center">
+			    <TextView 
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+			        android:id="@+id/college_2"
+			        android:textColor="#636363"
+			        android:padding="10dp"
+		          	android:textSize="@dimen/large_text_title"
+			        android:textStyle="bold" />
+			    <TextView 
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+			        android:id="@+id/names_2"
+			        android:paddingLeft="10dp"
+			        android:paddingRight="10dp"
+			        android:textSize="@dimen/text_big"
+			        android:gravity="center" />
+			    <TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:id="@+id/score_2"
+	   		        android:textSize="@dimen/text_big"	        
+			        android:padding="10dp"
+			        android:textColor="@drawable/green"/>
+			    <View 
+			        android:layout_height="6dp"
+			        android:layout_width="0dp"
+			        android:id="@+id/scale_2"
+			        android:background="@drawable/green"
+			        android:paddingLeft="10dp" 
+			        android:paddingRight="10dp" />
+		    </LinearLayout>
+	    </LinearLayout>
+	    <TextView
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentBottom="true"
+			        android:layout_centerHorizontal="true"
+			        android:id="@+id/voted_indicator"
+			        android:background="#99000000"
+			        android:text="VOTED"
+			        android:visibility="gone"			        
+			        android:gravity="center"
+			        android:textStyle="bold"
+			        android:textColor="@drawable/white"
+			        android:padding="10dp"
+			        android:textSize="@dimen/text_xbig"
+			        />
+	</RelativeLayout>
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fit_college_ad_height"
+        android:layout_gravity="center"
+        android:background="#8C8C8C"
+        android:adjustViewBounds="true"
+        android:id="@+id/adImgView"/>
+</LinearLayout>

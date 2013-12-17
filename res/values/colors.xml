@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="white">#FFFFFFFF</drawable>
+    <drawable name="dark_red">#990000</drawable>
+    
+    <drawable name="transparent">#00FFFFFF</drawable>
+    <drawable name="light_gray">#DDDDDD</drawable>
+    <drawable name="half_light_gray">#77DDDDDD</drawable>
+    <drawable name="show_button_pressed">#AAFFFFFF</drawable>
+    <drawable name="darker_gray">#AAAAAA</drawable>
+    <drawable name="more_less_divider">#777777</drawable>
+    <drawable name="half_darker_gray">#AA333333</drawable>
+    <drawable name="light_blue">#8AE6FF</drawable>
+    <drawable name="half_light_blue">#998AE6FF</drawable>
+    
+    <drawable name="red">#FF0000</drawable>
+    <drawable name="green">#2EA616</drawable>
+</resources>

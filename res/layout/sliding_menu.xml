@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+android:background="@drawable/back_pattern">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	>
+	<TextView 
+	    android:id="@+id/heading"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="@drawable/darker_gray"
+	    android:textSize="14sp"
+	    android:paddingLeft="20dp"
+	    android:paddingRight="20dp"
+	    android:paddingTop="20dp"
+	    android:paddingBottom="5dp"
+	    android:text="@string/cherwell_caps" />
+	
+	<View 
+	    android:id="@+id/divider1"
+	    android:layout_below="@+id/heading"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="@drawable/darker_gray"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp" 
+	    android:layout_marginBottom="8dp"/>
+	
+    <LinearLayout
+        android:id="@+id/newsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/divider1"
+        android:gravity="center_vertical"
+        android:onClick="openNews"
+        android:background="@drawable/row_bg" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/rss_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="@string/news"
+            android:textColor="@drawable/light_gray"
+            android:textSize="17sp" />
+    </LinearLayout>
+	
+	<LinearLayout
+        android:id="@+id/fitLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/row_bg"
+        android:layout_alignParentLeft="true"
+		android:layout_below="@+id/newsLayout"
+        android:gravity="center_vertical"
+        android:onClick="openFitCollege" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/fit_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="@string/fit_college"
+            android:textColor="@drawable/light_gray"
+            android:textSize="17sp"  />
+    </LinearLayout>
+    
+	<TextView 
+	    android:id="@+id/heading2"
+	    android:layout_below="@+id/fitLayout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="@drawable/darker_gray"
+	    android:textSize="14sp"
+	    android:paddingLeft="20dp"
+	    android:paddingRight="20dp"
+	    android:paddingTop="25dp"
+	    android:paddingBottom="5dp"
+	    android:text="@string/contact_caps" />
+	
+	<View 
+	    android:id="@+id/divider2"
+	    android:layout_below="@+id/heading2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="@drawable/darker_gray"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:layout_marginBottom="8dp" />
+	<LinearLayout
+        android:id="@+id/newsdeskLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/row_bg"
+        android:layout_alignParentLeft="true"
+		android:layout_below="@+id/divider2"
+        android:gravity="center_vertical"
+        android:onClick="contactNewsdesk" >
+        
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/newsdesk_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="@string/newsdesk"
+            android:textColor="@drawable/light_gray"
+            android:textSize="17sp"  />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/feedbackLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/row_bg"
+        android:layout_alignParentLeft="true"
+		android:layout_below="@+id/newsdeskLayout"
+        android:gravity="center_vertical"
+        android:onClick="giveFeedback" >
+        
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/feedback_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="@string/feedback"
+            android:textColor="@drawable/light_gray"
+            android:textSize="17sp"  />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/exit_application"
+            android:scaleType="fitXY"
+            />
+    </LinearLayout>
+    <TextView 
+	    android:id="@+id/heading3"
+	    android:layout_below="@+id/feedbackLayout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="@drawable/darker_gray"
+	    android:textSize="14sp"
+	    android:paddingLeft="20dp"
+	    android:paddingRight="20dp"
+	    android:paddingTop="25dp"
+	    android:paddingBottom="5dp"
+	    android:text="@string/other_caps" />
+	
+	<View 
+	    android:id="@+id/divider3"
+	    android:layout_below="@+id/heading3"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="@drawable/darker_gray"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:layout_marginBottom="8dp" />
+	<LinearLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/row_bg"
+        android:layout_alignParentLeft="true"
+		android:layout_below="@+id/divider3"
+        android:gravity="center_vertical"
+        android:onClick="openInfo" >
+        
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/info_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="@string/information"
+            android:textColor="@drawable/light_gray"
+            android:textSize="17sp"  />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/settingsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/row_bg"
+        android:layout_alignParentLeft="true"
+		android:layout_below="@+id/infoLayout"
+        android:gravity="center_vertical"
+        android:onClick="openSettings" >
+        
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/settings_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="@string/settings"
+            android:textColor="@drawable/light_gray"
+            android:textSize="17sp"  />
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

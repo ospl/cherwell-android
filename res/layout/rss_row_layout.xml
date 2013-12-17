@@ -1,0 +1,76 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:orientation="horizontal"
+    android:background="@drawable/rss_row_bg"
+    android:id="@+id/parent" >
+    
+    <ImageView
+	    android:id="@+id/article_image"
+	    android:layout_height="match_parent"
+	    android:layout_width="@dimen/picture_size"
+	    android:scaleType="centerCrop"
+	    android:src="@drawable/greyscale_cherwell" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/content_holder"
+        >
+		<com.cherwell.utilities.EllipsizingTextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:maxLines="2"
+		    android:ellipsize="end"
+		    android:text="Title For This Specific Article"
+		    android:padding="@dimen/rss_row_padding"
+		    android:textSize="@dimen/text_big"
+		    android:textStyle="bold"
+		    android:id="@+id/article_title"/>
+	  	
+		<com.cherwell.utilities.EllipsizingTextView 
+		    android:id="@+id/article_description"
+		    android:maxLines="2"
+		    android:textSize="@dimen/text_medium"
+		    android:ellipsize="end"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_vertical"
+		    android:paddingLeft="@dimen/rss_row_padding"
+		    android:paddingRight="@dimen/rss_row_padding"
+		    android:textColor="#474747"
+		    android:text="A long description about what the article is saying and what it contains and stuff" />
+		
+		<TextView
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+			android:id="@+id/article_author"
+			android:text="The Author"
+			android:maxLines="1"
+			android:ellipsize="end"
+			android:textSize="@dimen/text_small"
+			android:textColor="#707070"
+			android:padding="@dimen/rss_row_padding"
+			/>
+		
+		<View android:layout_width="fill_parent"
+		    android:layout_height="0.3dp"
+		    android:id="@+id/end_of_row_divider"
+		    android:background="@drawable/darker_gray"
+		    />
+	</LinearLayout>
+	
+</LinearLayout>
+<ImageView android:layout_width="15dp"
+    android:layout_height="15dp"
+    android:id="@+id/readIndicator"
+    android:src="@drawable/corner_tag"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"/>
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:padding="5dp"
+	>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" 
+	    android:id="@+id/info_parent"
+	    android:padding="@dimen/general_padding">
+	
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="10dp"
+		        android:paddingRight="10dp"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="5dp"
+		        android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true"
+		        android:textStyle="bold"
+		        android:textSize="@dimen/text_xbig"
+		        android:text="DEVELOPMENT TEAM" />
+		    <View android:layout_width="fill_parent"
+		        android:layout_height="1dp"
+		        android:background="@drawable/darker_gray"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        />
+		    <TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:lineSpacingExtra="4sp"
+		        android:textSize="@dimen/text_big"
+		        android:text="This app was developed by a team including: \nSarab Sethi (Android)\nPatrick Beardmore (iOS)\nAdam Hadley (Web)\nMax Bossino (OSPL Chairman)"
+				android:padding="10dp"
+				/>
+		    <TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/hyperlinkTextView"
+		        android:paddingLeft="10dp"
+		        android:paddingRight="10dp"
+		        android:paddingBottom="10dp"
+		        android:textSize="@dimen/text_big"
+		        android:text="See more of Sarab's apps"
+		        />
+		    
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="10dp"
+		        android:paddingRight="10dp"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="5dp"
+		        android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true"
+		        android:textStyle="bold"
+		        android:textSize="@dimen/text_xbig"
+		        android:text="HISTORY" />
+		    <View android:layout_width="fill_parent"
+		        android:layout_height="1dp"
+		        android:background="@drawable/darker_gray"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        />
+		    <TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textSize="@dimen/text_big"
+		        android:lineSpacingExtra="4sp"
+		        android:text="Cherwell is the independent student newspaper of Oxford University, England. Founded in 1920 by students Cecil Binney and George Edinger, it has continued as a weekly publication during term-time to this day. Cherwell is named after a local river in Oxford and is published on Friday mornings when 3,000 copies of each issue are distributed around Oxford's colleges, the Oxford Union and some local cafes. The staff of Cherwell, including the Editors, changes every term.
+		\n\nCherwell.org is the newspaper's website and has been running since 1996, winning a Guardian Student Media Award last year. The current version was launched in April 2011. In recent months Cherwell has made a strong effort to expand its use of different media with the introduction of video reports, features and podcasts - only available at cherwell.org.
+		\n\nCherwell is managed financially by a 100% student-run company, Oxford Student Publications Ltd. (OSPL), who also manage the magazines Isis and Bang!. OSPL's Board of Directors oversee the general running of the company as a business and the Board consists of former Editors and Business Managers of OSPL publications who are still students of Oxford University."
+				android:padding="10dp"
+				/>
+	</LinearLayout>
+</ScrollView>
